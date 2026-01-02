@@ -20,6 +20,14 @@
   </style>
 </head>
 <body>
-  <img src="https://res.cloudinary.com/dololgou9/image/upload/v1767358279/current.jpg">
+
+  <img id="qrImage" alt="QR Image">
+
+  <script>
+    const img = document.getElementById("qrImage");
+    const timestamp = new Date().getTime();
+    img.src = "https://res.cloudinary.com/TUO_CLOUD_NAME/image/upload/current.jpg?t=" + timestamp;
+  </script>
+
 </body>
 </html>
